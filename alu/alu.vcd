@@ -1,0 +1,53 @@
+$date
+	Thu Apr 20 21:44:17 2023
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module alu_tb $end
+$var wire 32 ! result [31:0] $end
+$var wire 1 " zero_bit $end
+$var reg 4 # control_signal [3:0] $end
+$var reg 32 $ read_data1 [31:0] $end
+$var reg 32 % read_data2 [31:0] $end
+$scope module a $end
+$var wire 4 & control_signal [3:0] $end
+$var wire 32 ' read_data1 [31:0] $end
+$var wire 32 ( read_data2 [31:0] $end
+$var reg 32 ) result [31:0] $end
+$var reg 1 * zero_bit $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0*
+b1100 )
+b1100 (
+b1100 '
+b0 &
+b1100 %
+b1100 $
+b0 #
+0"
+b1100 !
+$end
+#1
+b1 #
+b1 &
+#2
+b11000 )
+b11000 !
+b10 #
+b10 &
+#3
+1*
+1"
+b0 )
+b0 !
+b110 #
+b110 &
+#4

@@ -1,0 +1,87 @@
+$date
+	Thu Apr 20 02:06:19 2023
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module control_tb $end
+$var wire 1 ! alu_op1 $end
+$var wire 1 " alu_op2 $end
+$var wire 1 # alu_src $end
+$var wire 1 $ branch $end
+$var wire 1 % mem_read $end
+$var wire 1 & mem_to_reg $end
+$var wire 1 ' mem_write $end
+$var wire 1 ( reg_write $end
+$var reg 7 ) opcode [6:0] $end
+$scope module c $end
+$var wire 7 * opcode [6:0] $end
+$var reg 1 + alu_op1 $end
+$var reg 1 , alu_op2 $end
+$var reg 1 - alu_src $end
+$var reg 1 . branch $end
+$var reg 1 / mem_read $end
+$var reg 1 0 mem_to_reg $end
+$var reg 1 1 mem_write $end
+$var reg 1 2 reg_write $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+12
+01
+00
+0/
+0.
+0-
+0,
+1+
+b110011 *
+b110011 )
+1(
+0'
+0&
+0%
+0$
+0#
+0"
+1!
+$end
+#1
+0+
+0!
+1/
+1%
+10
+1&
+1-
+1#
+b11 )
+b11 *
+#2
+11
+1'
+0/
+0%
+02
+0(
+x0
+x&
+b100011 )
+b100011 *
+#3
+1,
+1"
+1.
+1$
+01
+0'
+0-
+0#
+b1100011 )
+b1100011 *
+#4

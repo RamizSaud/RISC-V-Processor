@@ -1,0 +1,39 @@
+$date
+	Thu Apr 20 17:55:43 2023
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module alu_mux_tb $end
+$var wire 32 ! choice [31:0] $end
+$var reg 1 " alu_src $end
+$var reg 32 # imm_gen_input [31:0] $end
+$var reg 32 $ register_input [31:0] $end
+$scope module a_m $end
+$var wire 1 % alu_src $end
+$var wire 32 & imm_gen_input [31:0] $end
+$var wire 32 ' register_input [31:0] $end
+$var reg 32 ( choice [31:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b11011 (
+b11011 '
+b101011 &
+0%
+b11011 $
+b101011 #
+0"
+b11011 !
+$end
+#1
+b101011 (
+b101011 !
+1"
+1%
+#2

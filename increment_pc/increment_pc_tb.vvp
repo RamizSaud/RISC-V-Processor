@@ -1,0 +1,61 @@
+#! /c/iverilog/bin/vvp
+:ivl_version "0.9.7 " "(v0_9_7)";
+:vpi_time_precision + 0;
+:vpi_module "system";
+:vpi_module "v2005_math";
+:vpi_module "va_math";
+S_00FF4060 .scope module, "increment_pc_tb" "increment_pc_tb" 2 3;
+ .timescale 0 0;
+v00FF8998_0 .var "clk", 0 0;
+v00FF89F0_0 .net "new_pc", 31 0, v00FF3210_0; 1 drivers
+v00FF8A48_0 .var "reset", 0 0;
+S_00FF3130 .scope module, "in_pc" "increment_pc" 2 7, 3 1, S_00FF4060;
+ .timescale 0 0;
+v00FF31B8_0 .net "clk", 0 0, v00FF8998_0; 1 drivers
+v00FF3210_0 .var "new_pc", 31 0;
+v00FF88E8_0 .var "pc", 31 0;
+v00FF8940_0 .net "reset", 0 0, v00FF8A48_0; 1 drivers
+E_00FF4C40 .event posedge, v00FF31B8_0;
+    .scope S_00FF3130;
+T_0 ;
+    %wait E_00FF4C40;
+    %load/v 8, v00FF8940_0, 1;
+    %jmp/0xz  T_0.0, 8;
+    %set/v v00FF88E8_0, 0, 32;
+    %jmp T_0.1;
+T_0.0 ;
+    %load/v 8, v00FF88E8_0, 32;
+    %mov 40, 0, 1;
+    %addi 8, 4, 33;
+    %set/v v00FF88E8_0, 8, 32;
+T_0.1 ;
+    %load/v 8, v00FF88E8_0, 32;
+    %set/v v00FF3210_0, 8, 32;
+    %jmp T_0;
+    .thread T_0;
+    .scope S_00FF4060;
+T_1 ;
+    %vpi_call 2 14 "$dumpfile", "increment_pc.vcd";
+    %vpi_call 2 15 "$dumpvars", 1'sb0, S_00FF4060;
+    %set/v v00FF8A48_0, 1, 1;
+    %set/v v00FF8998_0, 1, 1;
+    %delay 1, 0;
+    %set/v v00FF8A48_0, 0, 1;
+    %delay 20, 0;
+    %vpi_call 2 22 "$finish";
+    %end;
+    .thread T_1;
+    .scope S_00FF4060;
+T_2 ;
+    %delay 1, 0;
+    %load/v 8, v00FF8998_0, 1;
+    %inv 8, 1;
+    %set/v v00FF8998_0, 8, 1;
+    %jmp T_2;
+    .thread T_2;
+# The file index is used to find the file name in the following table.
+:file_names 4;
+    "N/A";
+    "<interactive>";
+    "increment_pc_tb.v";
+    "./increment_pc.v";

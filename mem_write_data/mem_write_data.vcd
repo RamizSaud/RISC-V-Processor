@@ -1,0 +1,39 @@
+$date
+	Fri May 26 00:59:49 2023
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module mem_write_data_tb $end
+$var wire 32 ! return_data [31:0] $end
+$var reg 3 " funct3 [2:0] $end
+$var reg 7 # opcode [6:0] $end
+$var reg 32 $ read_data [31:0] $end
+$scope module m23 $end
+$var wire 3 % funct3 [2:0] $end
+$var wire 7 & opcode [6:0] $end
+$var wire 32 ' read_data [31:0] $end
+$var reg 32 ( return_data [31:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b1100111 (
+b1011100001111010101010001100111 '
+b100011 &
+b0 %
+b1011100001111010101010001100111 $
+b100011 #
+b0 "
+b1100111 !
+$end
+#1
+b1011100001111010101010001100111 (
+b1011100001111010101010001100111 !
+b10 "
+b10 %
+#2

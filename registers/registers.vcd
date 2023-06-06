@@ -1,0 +1,48 @@
+$date
+	Wed Apr 19 23:54:49 2023
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module registers_tb $end
+$var wire 32 ! read_data1 [31:0] $end
+$var wire 32 " read_data2 [31:0] $end
+$var reg 5 # read_register1 [4:0] $end
+$var reg 5 $ read_register2 [4:0] $end
+$var reg 1 % reg_write $end
+$var reg 32 & write_data [31:0] $end
+$var reg 5 ' write_register [4:0] $end
+$scope module reg1 $end
+$var wire 32 ( read_data1 [31:0] $end
+$var wire 32 ) read_data2 [31:0] $end
+$var wire 5 * read_register1 [4:0] $end
+$var wire 5 + read_register2 [4:0] $end
+$var wire 1 , reg_write $end
+$var wire 32 - write_data [31:0] $end
+$var wire 5 . write_register [4:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b10 .
+b11000 -
+0,
+b1 +
+b0 *
+b1 )
+b0 (
+b10 '
+b11000 &
+0%
+b1 $
+b0 #
+b1 "
+b0 !
+$end
+#1
+1%
+1,

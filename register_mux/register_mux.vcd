@@ -1,0 +1,38 @@
+$date
+	Fri Apr 21 14:15:23 2023
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module register_mux_tb $end
+$var wire 32 ! choice [31:0] $end
+$var reg 32 " alu_result [31:0] $end
+$var reg 32 # mem_data [31:0] $end
+$var reg 1 $ mem_to_reg $end
+$scope module r_m $end
+$var wire 32 % alu_result [31:0] $end
+$var wire 32 & mem_data [31:0] $end
+$var wire 1 ' mem_to_reg $end
+$var reg 32 ( choice [31:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b101011 (
+1'
+b101011 &
+b10111 %
+1$
+b101011 #
+b10111 "
+b101011 !
+$end
+#1
+b10111 (
+b10111 !
+0$
+0'

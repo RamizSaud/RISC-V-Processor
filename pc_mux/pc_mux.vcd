@@ -1,0 +1,42 @@
+$date
+	Thu Apr 20 22:52:10 2023
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module pc_mux_tb $end
+$var wire 32 ! choice [31:0] $end
+$var reg 1 " branch $end
+$var reg 32 # increment_pc [31:0] $end
+$var reg 32 $ jump_pc [31:0] $end
+$var reg 1 % zero_bit $end
+$scope module p_m $end
+$var wire 1 & branch $end
+$var wire 32 ' increment_pc [31:0] $end
+$var wire 32 ( jump_pc [31:0] $end
+$var wire 1 ) zero_bit $end
+$var reg 32 * choice [31:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b11001 *
+1)
+b11001 (
+b10111 '
+1&
+1%
+b11001 $
+b10111 #
+1"
+b11001 !
+$end
+#1
+b10111 *
+b10111 !
+0"
+0&

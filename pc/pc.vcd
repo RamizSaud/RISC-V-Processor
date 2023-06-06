@@ -1,0 +1,26 @@
+$date
+	Wed Apr 19 22:05:57 2023
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module pc_tb $end
+$var wire 10 ! new_pc [9:0] $end
+$var reg 10 " old_pc [9:0] $end
+$scope module pc $end
+$var wire 10 # new_pc [9:0] $end
+$var wire 10 $ old_pc [9:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b0 $
+b0 #
+b0 "
+b0 !
+$end
+#1

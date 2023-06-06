@@ -1,0 +1,26 @@
+$date
+	Wed Apr 19 22:28:21 2023
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module instruction_memory_tb $end
+$var wire 32 ! instruction_code [31:0] $end
+$var reg 10 " read_address [9:0] $end
+$scope module i_m $end
+$var wire 32 # instruction_code [31:0] $end
+$var wire 10 $ read_address [9:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b0 $
+b100101000000001100110011 #
+b0 "
+b100101000000001100110011 !
+$end
+#1

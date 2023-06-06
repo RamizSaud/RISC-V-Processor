@@ -1,0 +1,37 @@
+$date
+	Thu Apr 20 16:27:43 2023
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module jump_pc_tb $end
+$var wire 10 ! new_pc [9:0] $end
+$var reg 32 " label [31:0] $end
+$var reg 10 # old_pc [9:0] $end
+$scope module j_p $end
+$var wire 32 $ label [31:0] $end
+$var wire 10 % new_pc [9:0] $end
+$var wire 10 & old_pc [9:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b0 &
+b11111 %
+b11111 $
+b0 #
+b11111 "
+b11111 !
+$end
+#1
+b10110 !
+b10110 %
+b1010 "
+b1010 $
+b1100 #
+b1100 &
+#2
